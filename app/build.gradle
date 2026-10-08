@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+    namespace 'com.muswall.gold'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.muswall.gold"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0 Gold Real"
+    }
+    buildTypes { release { minifyEnabled false } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
